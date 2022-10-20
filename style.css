@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html, body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    background: #D4D3D8;
+    
+}
+
+/*-------------------------utility classes------------------------------*/
+
+.container {
+    max-width: 1200px;
+    padding:  15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+/*-------------------------header---------------------------------------*/
+
+.header {
+    background: linear-gradient(92.33deg, #196B78 0.12%, #196B78 9.48%, #186C7A 44.34%, #138496 100%);
+    box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.16);
+    width: 100%;
+    height: 295px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87px;
+    color: #CCF8FF;
+}
+
+.sub__title {
+    padding-top: 12px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+    color: rgba(204, 248, 255, 0.75);
+}
+
+/*-------------------------placeholder------------------------------------*/
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+}
+
+input {
+    width: 820px;
+    height: 64px;
+    font-size: 24px;
+    line-height: 21px;
+    padding-left: 32px;
+}
+
+/*-------------------------cards---------------------------------------*/
+
+.cards {
+    padding-top: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card {
+    width: 316px;
+    height: 186px;
+    background: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.emoji {
+    font-size: 48px;
+    line-height: 48px;
+    padding-bottom: 18px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 28px;
+    text-decoration: underline;
+}
+
+.sub__text {
+    padding-top: 14px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #3F444A;
+}
+
+
+
