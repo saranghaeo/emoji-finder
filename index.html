@@ -7,7 +7,6 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <script src='main.js'></script>
 </head>
 <body>
     <header class="header">
@@ -21,77 +20,24 @@
             </div>
         </div>  
 
-        <div class="placeholder">
-            <form action="handler.php">
-                <p><input type=search placeholder="Placeholder">
-               </form> 
-        </div>
-    </header>
-    <section class="container">
-
-        <div class="cards">
-            <div class="card">
-                <p class="emoji">💯</p>
-                <h2 class="name">100</h2>
-                <p class="sub__text">Hundred, points, symbol, wow, win, perfect, parties</p>
-            </div>
-
-            <div class="card">
-                <p class="emoji">🔢</p>
-                <h2 class="name">1234</h2>
-                <p class="sub__text">input symbol for numbers symbol</p>
-            </div>
-
-            <div class="card">
-                <p class="emoji">🔢</p>
-                <h2 class="name">1234</h2>
-                <p class="sub__text">input symbol for numbers symbol</p>
-            </div>
-
-            <div class="card">
-                <p class="emoji">🔢</p>
-                <h2 class="name">1234</h2>
-                <p class="sub__text">input symbol for numbers symbol</p>
-            </div>
-
-            <div class="card">
-                <p class="emoji">🔢</p>
-                <h2 class="name">1234</h2>
-                <p class="sub__text">input symbol for numbers symbol</p>
-            </div>
-
-            <div class="card">
-                <p class="emoji">🔢</p>
-                <h2 class="name">1234</h2>
-                <p class="sub__text">input symbol for numbers symbol</p>
-            </div>
-
-            <div class="card">
-                <p class="emoji">🔢</p>
-                <h2 class="name">1234</h2>
-                <p class="sub__text">input symbol for numbers symbol</p>
-            </div>
-
-            <div class="card">
-                <p class="emoji">🔢</p>
-                <h2 class="name">1234</h2>
-                <p class="sub__text">input symbol for numbers symbol</p>
-            </div>
-
-            <div class="card">
-                <p class="emoji">🔢</p>
-                <h2 class="name">1234</h2>
-                <p class="sub__text">input symbol for numbers symbol</p>
-            </div>
-
-            <div class="card">
-                <p class="emoji">🔢</p>
-                <h2 class="name">1234</h2>
-                <p class="sub__text">input symbol for numbers symbol</p>
-            </div>
-
+        <div class="search">
+            <label for="emoji__placeholder"></label>
+            <input
+	            onkeyup="dynamicSearch(this.value)"
+	            class="placeholder"
+	            type="text"
+	            name="emoji__placeholder"
+	            id="emoji__placeholder"
+	            placeholder="Placeholder"
+            >
         </div>
 
-    </section>
+</header>
+
+    <div class="emojis" id="items"></div>
+        
 </body>
+
+<script src="javascript.js"></script>
+
 </html>
