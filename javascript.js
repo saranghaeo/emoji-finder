@@ -21,10 +21,11 @@ allEmoji.forEach((emoji) => {
 itemsList.innerHTML = str;
 
 let descList = document.getElementsByClassName("item");
+let input = document.getElementById("emoji__placeholder");
 
-function dynamicSearch(searchQuery) {
+function dynamicSearch() {
 	for (let i = 0; i < descList.length; i++) {
-		if (allEmoji[i].keywords.includes(searchQuery)) {
+		if (allEmoji[i].keywords.includes(input.value)) {
 			descList[i].style.display = "flex";
 		} else {
 			descList[i].style.display = "none";
