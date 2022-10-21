@@ -24,7 +24,6 @@ let descList = document.getElementsByClassName("item");
 
 function dynamicSearch(searchQuery) {
 	for (let i = 0; i < descList.length; i++) {
-		allEmoji;
 		if (allEmoji[i].keywords.includes(searchQuery)) {
 			descList[i].style.display = "flex";
 		} else {
